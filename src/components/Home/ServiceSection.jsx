@@ -49,7 +49,7 @@ const ServiceSection = () => {
 
   return (
     <section className="py-25 px-4 bg-white dark:bg-black relative transition-colors duration-300">
-       <div className="absolute left-0 w-full z-10  border-gray-700" data-aos="fade-up" data-aos-delay="700">
+      <div className="absolute left-0 w-full z-10  border-gray-700" data-aos="fade-up" data-aos-delay="700">
         <div className="mx-auto backdrop-blur-sm flex flex-col sm:flex-row items-center justify-center px-6 py-3 text-white text-sm font-semibold">
           {/* Rating Section */}
           <div className="flex items-center gap-3 dark:bg-black border border-gray-600 px-4 py-2 rounded-full order-1 sm:order-2 mb-3 sm:mb-0">
@@ -85,7 +85,7 @@ const ServiceSection = () => {
           className="text-center text-3xl md:text-4xl font-bold text-primary dark:text-primary mb-2 uppercase"
           data-aos="fade-down"
         >
-          Our <span className="dark:text-white text-gray-700">Services</span> 
+          Our <span className="dark:text-white text-gray-700">Services</span>
         </h2>
         <p
           className="text-center text-lg dark:text-white mb-8"
@@ -139,8 +139,8 @@ const ServiceSection = () => {
               <div
                 key={index}
                 className="relative min-w-[300px] md:min-w-[400px] h-[520px] rounded-lg shadow-lg border-primary border
-              overflow-hidden group
-             hover:scale-105 active:scale-105 bg-white hover:shadow-primary hover:border-primary/80 dark:bg-black/90 transition-all duration-300"
+                       overflow-hidden group
+                      hover:scale-105 active:scale-105 bg-white hover:shadow-primary hover:border-primary/80 dark:bg-black/90 transition-all duration-300"
                 data-aos="fade-up"
                 data-aos-delay={index * 150} // staggered animation for each card
               >
@@ -149,10 +149,10 @@ const ServiceSection = () => {
                   <img
                     src={service.image}
                     alt={service.title}
-                    className="absolute inset-0 w-[95%] mt-15 h-55 object-cover"
+                    className="absolute inset-0 w-[55%] mt-25 h-8.9 mx-auto object-cover"
                     onError={(e) => {
                       e.currentTarget.onerror = null;
-                      e.currentTarget.src = "/logo.jpg"; // fallback logo
+                      e.currentTarget.src = "/logo.png"; // fallback logo
                     }}
                   />
 
@@ -170,8 +170,8 @@ const ServiceSection = () => {
                   <p className="text-sm text-white mb-4">{service.desc}</p>
                   <Link to={service.path}>
                     <button className="mt-auto px-4 py-2 text-xs border border-light rounded-full font-semibold cursor-pointer
-                      bg-overlay dark:bg-overlay/30 hover:bg-primary dark:hover:bg-primary
-                      text-primary dark:text-primary hover:text-dark transition-all duration-300"
+                               bg-overlay dark:bg-overlay/30 hover:bg-primary dark:hover:bg-primary
+                               text-primary dark:text-primary hover:text-dark transition-all duration-300"
                     >
                       <FaArrowRight className="inline mr-2 transition-transform duration-300 group-hover:-translate-x-1" />
                       <span className="transition-transform duration-300 group-hover:translate-x-2">EXPLORE</span>
