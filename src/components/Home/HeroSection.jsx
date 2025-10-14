@@ -36,7 +36,7 @@ const HeroSection = () => {
           data-aos="fade-down"
           data-aos-delay="100"
         >
-          Fixing all things cars
+          Fixing All Things Cars
         </h1>
 
         {/* Logo Title */}
